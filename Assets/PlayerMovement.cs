@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private IconLauncher nearbyIcon;
      private ExitButton nearbyExit;
-   private UpdateButton nearbyUpdate;
+   //private UpdateButton nearbyUpdate;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -110,10 +110,10 @@ public class PlayerMovement : MonoBehaviour
         {
             nearbyExit.closeApp();
         }
-        if (nearbyUpdate != null && Input.GetKeyDown(KeyCode.E))
+       /* if (nearbyUpdate != null && Input.GetKeyDown(KeyCode.E))
         {
             nearbyUpdate.closeApp();
-        }
+        }*/
         Flip();
     }
 
@@ -137,10 +137,10 @@ public class PlayerMovement : MonoBehaviour
          {
              nearbyExit = close;
          }
-         if (other.TryGetComponent<UpdateButton>(out UpdateButton update))
+         /*if (other.TryGetComponent<UpdateButton>(out UpdateButton update))
          {
              nearbyUpdate = update;
-         }
+         }*/
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -154,10 +154,10 @@ public class PlayerMovement : MonoBehaviour
          {
              nearbyExit = null;
          }
-         if (other.GetComponent<UpdateButton>() != null)
+         /*if (other.GetComponent<UpdateButton>() != null)
          {
              nearbyUpdate = null;
-         }
+         }*/
     }
 
     private void Flip()
