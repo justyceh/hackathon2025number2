@@ -9,12 +9,17 @@ public class PlayerMovement : MonoBehaviour
     private bool isFacingRight = true;
 
     private IconLauncher nearbyIcon;
-    private ExitButton nearbyExit;
+     private ExitButton nearbyExit;
+     private GameObject PaintButton1;
+     private PaintButton nearbyPaintButton1;
+
+     private EraserButton nearbyEraserButton;
     private UpdateButton nearbyUpdate;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator anim;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
 
@@ -101,11 +106,6 @@ public class PlayerMovement : MonoBehaviour
        
             nearbyIcon.launchApp();
         }
-       
-        if (nearbyExit != null && Input.GetKeyDown(KeyCode.E))
-        {
-             nearbyExit.closeApp();
-        }
        if (nearbyExit != null && Input.GetKeyDown(KeyCode.E))
         {
             nearbyExit.closeApp();
@@ -114,6 +114,15 @@ public class PlayerMovement : MonoBehaviour
         {
             nearbyUpdate.LoadNextScene();
              Debug.Log("Update button clicked!!!!");
+        }
+        if (nearbyPaintButton1 != null && Input.GetKeyDown(KeyCode.E))
+        {
+            nearbyPaintButton1.generatePlatform();
+        }
+        if (nearbyEraserButton != null && Input.GetKeyDown(KeyCode.E))
+        {
+            Debug.Log("Eraser button clicked!!!!");
+            nearbyEraserButton.Erase();
         }
         Flip();
     }
@@ -142,6 +151,14 @@ public class PlayerMovement : MonoBehaviour
          {
              nearbyUpdate = update;
          }
+         if (other.TryGetComponent<PaintButton>(out PaintButton paintButton1))
+         {
+             nearbyPaintButton1 = paintButton1;
+         }
+         if (other.TryGetComponent<EraserButton>(out EraserButton eraserButton))
+         {
+             nearbyEraserButton = eraserButton;
+         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -158,6 +175,14 @@ public class PlayerMovement : MonoBehaviour
          if (other.GetComponent<UpdateButton>() != null)
          {
              nearbyUpdate = null;
+         }
+         if (other.GetComponent<PaintButton>() != null)
+         {
+             nearbyPaintButton1 = null;
+         }
+         if (other.GetComponent<EraserButton>() != null)
+         {
+             nearbyEraserButton = null;
          }
     }
 

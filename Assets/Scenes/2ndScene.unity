@@ -407,7 +407,11 @@ PrefabInstance:
       value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2520373401210554563, guid: 861dd290ae721a3498b2f56ba497c69d, type: 3}
+    - {fileID: 2660919515216773520, guid: 861dd290ae721a3498b2f56ba497c69d, type: 3}
+    - {fileID: 1838652364106258181, guid: 861dd290ae721a3498b2f56ba497c69d, type: 3}
+    - {fileID: 5464945218212444548, guid: 861dd290ae721a3498b2f56ba497c69d, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 4754875025616879071, guid: 861dd290ae721a3498b2f56ba497c69d, type: 3}
       insertIndex: -1
@@ -1338,7 +1342,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  anim: {fileID: 0}
+  anim: {fileID: 1928446065}
 --- !u!61 &1928446061
 BoxCollider2D:
   m_ObjectHideFlags: 0
