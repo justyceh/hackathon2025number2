@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class UpdateButton : MonoBehaviour
@@ -11,5 +11,5 @@ if (SceneManager.sceneCount > nextSceneIndex)
     SceneManager.LoadScene(nextSceneIndex);
 }
 }
-    }
+    }*/
     
