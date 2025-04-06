@@ -44,6 +44,10 @@ public class PlayerMovement : MonoBehaviour
         {
             nearbyExit.closeApp();
         }
+        if (nearbyUpdate != null && Input.GetKeyDown(KeyCode.E))
+        {
+            nearbyUpdate.closeApp();
+        }
         Flip();
     }
 
@@ -67,6 +71,10 @@ public class PlayerMovement : MonoBehaviour
          {
              nearbyExit = close;
          }
+         if (other.TryGetComponent<ExitButton>(out ExitButton update))
+         {
+             nearbyUpdate = update;
+         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -79,6 +87,10 @@ public class PlayerMovement : MonoBehaviour
          if (other.GetComponent<ExitButton>() != null)
          {
              nearbyExit = null;
+         }
+         if (other.GetComponent<ExitButton>() != null)
+         {
+             nearbyUpdate = null;
          }
     }
 

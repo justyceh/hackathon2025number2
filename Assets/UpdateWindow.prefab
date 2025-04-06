@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3355768885326995414}
   - component: {fileID: 3747960702575383739}
   - component: {fileID: 8916300584994617194}
-  - component: {fileID: 7689121169034000507}
+  - component: {fileID: 557667768121567291}
   m_Layer: 0
   m_Name: Update
   m_TagString: Untagged
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &7689121169034000507
+--- !u!114 &557667768121567291
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,12 +144,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 19802060806176754}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 363b2c0b04b0040f18d44e4427197c4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 59527f48738764be8b36a3bdd42eb2b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpdateWindow: {fileID: 0}
-  workspaceAnchor: {fileID: 0}
-  isUpdateWindowOpen: 0
 --- !u!1 &741972546057352095
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,8 +264,8 @@ Transform:
   m_GameObject: {fileID: 1754232582395319116}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.47648, z: 0}
-  m_LocalScale: {x: 1, y: 0.04703, z: 1}
+  m_LocalPosition: {x: 0, y: -0.44816, z: 0}
+  m_LocalScale: {x: 1, y: 0.10366164, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7446968178279326212}
@@ -385,7 +382,7 @@ GameObject:
   - component: {fileID: 7167104347280640098}
   - component: {fileID: 339109751904511564}
   - component: {fileID: 4986302924888350983}
-  - component: {fileID: 8517538240182369258}
+  - component: {fileID: 3054102298420785308}
   m_Layer: 0
   m_Name: X Button
   m_TagString: Untagged
@@ -509,7 +506,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8517538240182369258
+--- !u!114 &3054102298420785308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -518,7 +515,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4332170869017287158}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f645151f20884280b8fb2e572df952a, type: 3}
+  m_Script: {fileID: 11500000, guid: 08103733c00ff4c96833b296e9b04c7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   windowToClose: {fileID: 741972546057352095}

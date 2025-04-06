@@ -279,7 +279,7 @@ GameObject:
   - component: {fileID: 7446968178279326212}
   - component: {fileID: 6736404476228673493}
   m_Layer: 0
-  m_Name: MsPaintWindow
+  m_Name: WordMicrosoft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
