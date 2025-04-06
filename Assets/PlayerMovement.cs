@@ -1,14 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-// Added comment
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontalInput;
     private float speed = 8f;
-    private float jumpingPower = 24f;
+    private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
     private IconLauncher nearbyIcon;
+     private ExitButton nearbyExit;
+   private UpdateButton nearbyUpdate;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -27,9 +29,20 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.5f);
         }
+      
         if (nearbyIcon != null && Input.GetKeyDown(KeyCode.E))
         {
-            nearbyIcon.LaunchApp();
+       
+            nearbyIcon.launchApp();
+        }
+       
+        if (nearbyExit != null && Input.GetKeyDown(KeyCode.E))
+        {
+             nearbyExit.closeApp();
+        }
+       if (nearbyExit != null && Input.GetKeyDown(KeyCode.E))
+        {
+            nearbyExit.closeApp();
         }
         Flip();
     }
@@ -50,6 +63,10 @@ public class PlayerMovement : MonoBehaviour
         {
             nearbyIcon = launcher;
         }
+        if (other.TryGetComponent<ExitButton>(out ExitButton close))
+         {
+             nearbyExit = close;
+         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -57,7 +74,12 @@ public class PlayerMovement : MonoBehaviour
         if (other.GetComponent<IconLauncher>() != null)
         {
             nearbyIcon = null;
+           
         }
+         if (other.GetComponent<ExitButton>() != null)
+         {
+             nearbyExit = null;
+         }
     }
 
     private void Flip()
