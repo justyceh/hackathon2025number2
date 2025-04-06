@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hollowsquare_0: 4414800380557399901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
