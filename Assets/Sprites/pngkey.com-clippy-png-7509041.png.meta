@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 97c181a79aead33489294dd0d34ace79
+guid: 9a1437067f1bb2e4bbc1a28b88fc8759
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3295867316946445317
-    second: 85-855284_clippit-microsoft-clippy_0
+      213: 6900962029414346851
+    second: pngkey.com-clippy-png-7509041_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 85-855284_clippit-microsoft-clippy_0
+      name: pngkey.com-clippy-png-7509041_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 300
-        height: 277
+        width: 1000
+        height: 1000
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 504a96dccd54dbd20800000000000000
-      internalID: 3295867316946445317
+      spriteID: 36073b3276425cf50800000000000000
+      internalID: 6900962029414346851
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      85-855284_clippit-microsoft-clippy_0: 3295867316946445317
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
