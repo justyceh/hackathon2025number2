@@ -17,3 +17,4 @@ public class IconLauncher : MonoBehaviour
         Debug.Log("App launched!");
     }
 }
+
