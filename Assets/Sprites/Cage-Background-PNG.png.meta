@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cage-Background-PNG_0: -962136593425731626
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
