@@ -226,7 +226,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7.1125
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -996,6 +996,7 @@ GameObject:
   - component: {fileID: 1928446062}
   - component: {fileID: 1928446061}
   - component: {fileID: 1928446060}
+  - component: {fileID: 1928446065}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1020,6 +1021,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  anim: {fileID: 1928446065}
 --- !u!61 &1928446061
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1058,7 +1060,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
+    oldSize: {x: 1.8, y: 2.8}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1137,7 +1139,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 100
-  m_Sprite: {fileID: 3427114271967980436, guid: 609cf7e2f46a0074dbb325ecd20dd08b, type: 3}
+  m_Sprite: {fileID: 7065419550066353552, guid: 6b0d1b9852f91624ea17b9da233c203a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1164,6 +1166,28 @@ Transform:
   - {fileID: 1093521466}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1928446065
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928446059}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 636ab3e3d66c64377b80bb0a6d4f95a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2095871091
 GameObject:
   m_ObjectHideFlags: 0

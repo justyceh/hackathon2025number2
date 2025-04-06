@@ -12,11 +12,77 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
 
     // Update is called once per frame
     void Update()
     {
+        //animations
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                anim.Play("start_click");
+            }
+            else if (Input.GetKey(KeyCode.E))
+            {
+                anim.Play("hold_click");
+
+            }
+            else if (Input.GetKeyUp(KeyCode.E))
+            {
+                anim.Play("end_click");
+            }
+            else
+            {
+                anim.Play("run_left");
+            }
+        }
+        else if (Input.GetKey(KeyCode.D))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                anim.Play("start_click");
+            }
+            else if (Input.GetKey(KeyCode.E))
+            {
+                anim.Play("hold_click");
+
+            }
+            else if (Input.GetKeyUp(KeyCode.E))
+            {
+                anim.Play("end_click");
+            }
+            else
+            {
+                anim.Play("run_right");
+            }
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                anim.Play("start_click");
+            }
+            else if (Input.GetKey(KeyCode.E))
+            {
+                anim.Play("hold_click");
+
+            }
+            else if (Input.GetKeyUp(KeyCode.E))
+            {
+                anim.Play("end_click");
+            }
+            else
+            {
+                anim.Play("idle");
+            }
+        }
+
+
         horizontalInput = Input.GetAxisRaw("Horizontal");
         if(Input.GetButtonDown("Jump") && isGrounded())
         {
