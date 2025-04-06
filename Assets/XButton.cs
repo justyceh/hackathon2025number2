@@ -16,12 +16,12 @@ public class ExitButton : MonoBehaviour
         isAppWindowOpen = false;
         Destroy(windowToClose);
         Debug.Log("App Closed!");
-        if (SceneManager.GetActiveScene().buildIndex == 0){
+        if (SceneManager.GetActiveScene().buildIndex == 1){
         Vector3 spawnPosition = workspaceAnchor ? workspaceAnchor.position : new Vector3(0, 1, 0); // Example position
         Instantiate(UpdateWindow, spawnPosition, Quaternion.identity);
         Debug.Log("Window update launched!");
         }
-        if (SceneManager.GetActiveScene().buildIndex == 1){
+        if (SceneManager.GetActiveScene().buildIndex == 2){
         if (isUpdateWindowOpen) return; // Prevent launching if already open or not closed
         isUpdateWindowOpen = true;
         spawnAdsNow = true; // Set the flag to true to spawn the update window
