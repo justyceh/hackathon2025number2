@@ -71,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
          {
              nearbyExit = close;
          }
-         if (other.TryGetComponent<ExitButton>(out ExitButton update))
+         if (other.TryGetComponent<UpdateButton>(out UpdateButton update))
          {
              nearbyUpdate = update;
          }
@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
          {
              nearbyExit = null;
          }
-         if (other.GetComponent<ExitButton>() != null)
+         if (other.GetComponent<UpdateButton>() != null)
          {
              nearbyUpdate = null;
          }
