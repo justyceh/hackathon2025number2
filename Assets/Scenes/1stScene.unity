@@ -1583,9 +1583,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 658524563}
   lines:
-  - test
-  - test2
-  - test3
+  - Hey, you seem a bit lost there! First time? (Space to continue)
+  - My name is Clippy! Nice to Meet ya! (Space)
+  - "Ah, you\u2019re a new cursor. Let me guide you. (Space)"
+  - Go over to Microsoft word and press E. (Space after done)
+  - Woah those instructions look important! (Space)
+  - Lets close this window (Space after done)
+  - "Wooo a window! Interact with the update button! Let\u2019s see what happens!
+    (Space)"
   textSpeed: 0
 --- !u!114 &1754135733
 MonoBehaviour:
