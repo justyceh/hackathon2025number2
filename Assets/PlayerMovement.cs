@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// Added comment
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontalInput;
