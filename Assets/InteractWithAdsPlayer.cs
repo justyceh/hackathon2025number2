@@ -21,6 +21,9 @@ public class tempInteraction : MonoBehaviour
     private spawn_ads adListsauce;
     static public bool deleted = false;
 
+    public Transform workspaceAnchor;
+    public GameObject UpdateWindow;
+
     private float distx;
 
 
@@ -67,6 +70,8 @@ public class tempInteraction : MonoBehaviour
         if (Input.GetKey(KeyCode.E) && collision.gameObject.CompareTag("adblocker"))
         {
             deleted = true;
+            //Vector3 spawnPosition = workspaceAnchor ? workspaceAnchor.position : new Vector3(0, 1, 0); // Example position
+            Instantiate(UpdateWindow, new Vector3(0,0,0), Quaternion.identity);
         }
     }
 

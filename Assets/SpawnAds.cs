@@ -19,9 +19,13 @@ public class spawn_ads : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (numAds < 6)
+        if (ExitButton.spawnAdsNow)
         {
-            StartCoroutine(spawnAds());
+            StartCoroutine(waitSauce());
+            if (numAds < 6)
+            {
+                StartCoroutine(spawnAds());
+            }
         }
     }
 
@@ -30,7 +34,7 @@ public class spawn_ads : MonoBehaviour
 
     }
 
-    private IEnumerator<WaitForSecondsRealtime> spawnAds()
+    private IEnumerator<WaitForSeconds> spawnAds()
     {
         float randx = Random.Range(-7, 7);
         float randy = Random.Range(-3.7f, 3.7f);
@@ -40,6 +44,11 @@ public class spawn_ads : MonoBehaviour
         numAds++;
         instantiatedAds.Add(newAd);
 
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSeconds(1f);
+    }
+
+    private IEnumerator<WaitForSeconds> waitSauce()
+    {
+        yield return new WaitForSeconds(3f);
     }
 }
