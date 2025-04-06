@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ed76b085dd51e4415ae3e177fc414280
+guid: bdd486f402bb0b7439b437d9f32a08fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2560490113872652757
-    second: CreditsScene_0
+      213: -962136593425731626
+    second: Cage-Background-PNG_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CreditsScene_0
+      name: Cage-Background-PNG_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 468
-        height: 312
+        width: 841
+        height: 882
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b2698b7becf477cd0800000000000000
-      internalID: -2560490113872652757
+      spriteID: 6df647badddc5a2f0800000000000000
+      internalID: -962136593425731626
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      CreditsScene_0: -2560490113872652757
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
