@@ -8,7 +8,7 @@ public class IconLauncher : MonoBehaviour
     public bool isAppWindowOpen = false;
     public bool isAppWindowClosed = true;
 
-    public void LaunchApp()
+    public void launchApp()
     {
         if (isAppWindowOpen || !isAppWindowClosed) return; // Prevent launching if already open or not closed
         isAppWindowOpen = true;
