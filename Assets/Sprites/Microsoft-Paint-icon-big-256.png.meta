@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Microsoft-Paint-icon-big-256_0: -6753934021351407147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
